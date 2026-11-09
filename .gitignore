@@ -1,0 +1,35 @@
+# Dependencies and build output
+node_modules/
+dist/
+*.local
+
+# Python environments, caches and test artefacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+
+# Local databases and biometric/attendance data
+*.db
+*.sqlite
+*.sqlite3
+smartface_dataset_*.json
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Keep the bundled demo databases in the repository
+!api/attendance.db
+!backend/attendance.db
+!attendance.db
